@@ -9,7 +9,7 @@ server_socket.bind(('127.0.0.1', 12345))
 print("Server UDP siap menerima data...")
 
 while True:
-    # Menerima data dari client (buffer size 1024 bytes)
+    # Menerima data dari client (sebagai contoh buffer size disini 1024 (dapat disesuaikan))
     data, addr = server_socket.recvfrom(1024)
     print(f"Pesan diterima dari {addr}: {data.decode()}")
 
